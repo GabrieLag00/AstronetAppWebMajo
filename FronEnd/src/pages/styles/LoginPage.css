@@ -1,0 +1,76 @@
+/* LoginPage.css */
+.login-container {
+    background: url('../bg/backimg.jpg') center/cover no-repeat fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    transition: background 0.5s;
+  }
+  
+  .login-form {
+    background: rgba(0, 0, 0, 0.4); /* Fondo ligeramente más claro y transparente */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  height: auto; /* Ajusta la altura automáticamente según el contenido */
+  transition: all 0.3s;
+  }
+  
+  .login-form h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    transition: all 0.3s;
+  }
+  
+  .login-form input:focus {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.4);
+  }
+  
+  .login-form p {
+    color: #d400ff;
+    transition: color 0.3s;
+  }
+  
+  .login-form button {
+    width: 100%; /* Establece el ancho al 100% para que coincida con los inputs */
+    background: rgba(255, 255, 255, 0); /* Fondo transparente */
+    border: 1px solid #800080; /* Borde morado */
+    border-radius: 5px;
+    color: #800080; /* Texto morado */
+    padding: 10px 0; /* Padding vertical para que coincida con los inputs */
+    cursor: pointer;
+    transition: all 0.3s; /* Agrega animación de transición */
+  }
+  
+  .login-form button:hover {
+    background: rgba(255, 255, 255, 0.2); /* Cambia el color de fondo al pasar el cursor */
+    transform: scale(1.05); /* Aumenta el tamaño al enfocarse */
+  }
+  
+  .login-form p a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .login-form p a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+  }
+  

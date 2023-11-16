@@ -1,0 +1,124 @@
+/* Search.css */
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  .image-card {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+  }
+  
+  .image-target {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    text-align: center;
+    position: relative;
+  }
+  
+  .image-target img {
+    width: 100%;
+    max-height: 300px; /* Ajusta esta altura según tus preferencias */
+  }
+  
+  .image-info {
+    padding: 10px;
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(32, 28, 28, 0.8);
+    border: 1px solid #ccc;
+    border-radius: 0 0 8px 8px;
+  }
+  
+  .image-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .image-popup-content {
+    background: rgba(43, 40, 40, 0.8);
+    border: 2px solid #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    max-width: 80%;
+    max-height: 80vh; /* Ajusta esta altura según tus preferencias */
+  }
+  
+  .image-popup img {
+    max-width: 100%;
+    max-height: 80vh; /* Ajusta esta altura según tus preferencias */
+  }
+  
+  .image-popup p {
+    margin-top: 10px;
+  }
+  
+  .clear-button {
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0); /* Fondo transparente */
+    border: 2px solid #800080; /* Borde morado */
+    border-radius: 5px;
+    color: #800080; /* Texto morado */
+    cursor: pointer;
+    transition: all 0.3s; /* Agrega animación de transición */
+    margin-right: 10px;
+  }
+  
+  .clear-button:hover {
+    background: rgba(255, 255, 255, 0.2); /* Cambia el color de fondo al pasar el cursor */
+    transform: translateY(-5px);
+  }
+  .search-bar {
+    margin-top: 150px; /* Ajusta la cantidad de margen superior según tus necesidades */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+  }
+  
+  .search-bar input {
+    width: 600px;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0); /* Fondo transparente */
+    border: 2px solid #800080; /* Borde morado */
+    border-radius: 5px;
+    color: #800080; /* Texto morado */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-right: 10px;
+    outline: none; /* Elimina el resaltado de foco */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .search-bar input::placeholder {
+    color: #800080; /* Color del marcador de posición */
+    opacity: 0.6; /* Opacidad del marcador de posición */
+  }
+  
+  .search-bar input:focus {
+    transform: translateY(-5px); /* Desplazamiento hacia arriba al seleccionar */
+    box-shadow: 0 0 10px rgba(128, 0, 128, 0.8); /* Agrega una sombra al seleccionar */
+  }
+  
+  .search-bar input:active {
+    transform: translateY(0); /* Vuelve a la posición original al hacer clic */
+  }
+  
